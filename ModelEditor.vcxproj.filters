@@ -2,245 +2,246 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <FxCompile Include="HLSL\Lambert.fx">
-      <Filter>fx</Filter>
+      <Filter>Fx,HLSL</Filter>
     </FxCompile>
     <FxCompile Include="HLSL\Outline.fx">
-      <Filter>fx</Filter>
+      <Filter>Fx,HLSL</Filter>
     </FxCompile>
     <FxCompile Include="HLSL\Phong.fx">
-      <Filter>fx</Filter>
+      <Filter>Fx,HLSL</Filter>
     </FxCompile>
     <FxCompile Include="HLSL\LinePS.hlsl">
-      <Filter>fx</Filter>
+      <Filter>Fx,HLSL</Filter>
     </FxCompile>
     <FxCompile Include="HLSL\LineVS.hlsl">
-      <Filter>fx</Filter>
+      <Filter>Fx,HLSL</Filter>
     </FxCompile>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Render.cpp" />
     <ClCompile Include="External\imgui\imgui.cpp">
-      <Filter>imgui</Filter>
+      <Filter>Imgui</Filter>
     </ClCompile>
     <ClCompile Include="External\imgui\imgui_demo.cpp">
-      <Filter>imgui</Filter>
+      <Filter>Imgui</Filter>
     </ClCompile>
     <ClCompile Include="External\imgui\imgui_draw.cpp">
-      <Filter>imgui</Filter>
+      <Filter>Imgui</Filter>
     </ClCompile>
     <ClCompile Include="External\imgui\imgui_impl_dx11.cpp">
-      <Filter>imgui</Filter>
+      <Filter>Imgui</Filter>
     </ClCompile>
     <ClCompile Include="External\imgui\imgui_impl_win32.cpp">
-      <Filter>imgui</Filter>
+      <Filter>Imgui</Filter>
     </ClCompile>
     <ClCompile Include="External\imgui\imgui_tables.cpp">
-      <Filter>imgui</Filter>
+      <Filter>Imgui</Filter>
     </ClCompile>
     <ClCompile Include="External\imgui\imgui_widgets.cpp">
-      <Filter>imgui</Filter>
+      <Filter>Imgui</Filter>
     </ClCompile>
     <ClCompile Include="Source\Graphics\Model.cpp">
-      <Filter>model</Filter>
+      <Filter>Model</Filter>
     </ClCompile>
     <ClCompile Include="Source\Graphics\FBXModel.cpp">
-      <Filter>model</Filter>
+      <Filter>Model</Filter>
     </ClCompile>
     <ClCompile Include="Source\TextureManager.cpp">
-      <Filter>resourcemanager</Filter>
+      <Filter>ResourceManager</Filter>
     </ClCompile>
     <ClCompile Include="Source\ResourceManager.cpp">
-      <Filter>resourcemanager</Filter>
+      <Filter>ResourceManager</Filter>
     </ClCompile>
     <ClCompile Include="Source\Camera.cpp">
-      <Filter>camera</Filter>
+      <Filter>Camera</Filter>
     </ClCompile>
     <ClCompile Include="Source\Input\Input.cpp">
-      <Filter>input</Filter>
+      <Filter>Input</Filter>
     </ClCompile>
     <ClCompile Include="Source\Light.cpp">
-      <Filter>light</Filter>
+      <Filter>Light</Filter>
     </ClCompile>
     <ClCompile Include="Source\System.cpp">
-      <Filter>system</Filter>
+      <Filter>System</Filter>
     </ClCompile>
     <ClCompile Include="Source\Main.cpp">
-      <Filter>system</Filter>
+      <Filter>System</Filter>
     </ClCompile>
     <ClCompile Include="Source\Shader.cpp">
-      <Filter>shader</Filter>
+      <Filter>Shader</Filter>
     </ClCompile>
     <ClCompile Include="Source\BlendMode.cpp">
-      <Filter>blendmode</Filter>
+      <Filter>BlendMode</Filter>
     </ClCompile>
     <ClCompile Include="Source\Collision.cpp">
-      <Filter>collision</Filter>
+      <Filter>Collision</Filter>
     </ClCompile>
     <ClCompile Include="Source\DirectX11.cpp">
-      <Filter>directx11</Filter>
+      <Filter>DirectX11</Filter>
     </ClCompile>
     <ClCompile Include="Source\DropManager.cpp">
-      <Filter>dropmanager</Filter>
+      <Filter>DropManager</Filter>
     </ClCompile>
     <ClCompile Include="Source\Rasterizer.cpp">
-      <Filter>rasterizer</Filter>
+      <Filter>Rasterizer</Filter>
     </ClCompile>
     <ClCompile Include="Source\Graphics\Graphics.cpp">
-      <Filter>graphics</Filter>
+      <Filter>Graphics</Filter>
     </ClCompile>
     <ClCompile Include="Source\LineRender.cpp">
-      <Filter>shader</Filter>
+      <Filter>Shader</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Render.h" />
     <ClInclude Include="External\imgui\imconfig.h">
-      <Filter>imgui</Filter>
+      <Filter>Imgui</Filter>
     </ClInclude>
     <ClInclude Include="External\imgui\imfilebrowser.h">
-      <Filter>imgui</Filter>
+      <Filter>Imgui</Filter>
     </ClInclude>
     <ClInclude Include="External\imgui\imgui.h">
-      <Filter>imgui</Filter>
+      <Filter>Imgui</Filter>
     </ClInclude>
     <ClInclude Include="External\imgui\imgui_impl_dx11.h">
-      <Filter>imgui</Filter>
+      <Filter>Imgui</Filter>
     </ClInclude>
     <ClInclude Include="External\imgui\imgui_impl_win32.h">
-      <Filter>imgui</Filter>
+      <Filter>Imgui</Filter>
     </ClInclude>
     <ClInclude Include="External\imgui\imgui_internal.h">
-      <Filter>imgui</Filter>
+      <Filter>Imgui</Filter>
     </ClInclude>
     <ClInclude Include="External\imgui\ImGuiRender.h">
-      <Filter>imgui</Filter>
+      <Filter>Imgui</Filter>
     </ClInclude>
     <ClInclude Include="External\imgui\imstb_rectpack.h">
-      <Filter>imgui</Filter>
+      <Filter>Imgui</Filter>
     </ClInclude>
     <ClInclude Include="External\imgui\imstb_textedit.h">
-      <Filter>imgui</Filter>
+      <Filter>Imgui</Filter>
     </ClInclude>
     <ClInclude Include="External\imgui\imstb_truetype.h">
-      <Filter>imgui</Filter>
+      <Filter>Imgui</Filter>
     </ClInclude>
     <ClInclude Include="Source\Graphics\Model.h">
-      <Filter>model</Filter>
+      <Filter>Model</Filter>
     </ClInclude>
     <ClInclude Include="Source\Graphics\FBXModel.h">
-      <Filter>model</Filter>
+      <Filter>Model</Filter>
     </ClInclude>
     <ClInclude Include="Source\TextureManager.h">
-      <Filter>resourcemanager</Filter>
+      <Filter>ResourceManager</Filter>
     </ClInclude>
     <ClInclude Include="Source\Texture.h">
-      <Filter>resourcemanager</Filter>
+      <Filter>ResourceManager</Filter>
     </ClInclude>
     <ClInclude Include="Source\ResourceManager.h">
-      <Filter>resourcemanager</Filter>
+      <Filter>ResourceManager</Filter>
     </ClInclude>
     <ClInclude Include="Source\Camera.h">
-      <Filter>camera</Filter>
+      <Filter>Camera</Filter>
     </ClInclude>
     <ClInclude Include="Source\Input\Input.h">
-      <Filter>input</Filter>
+      <Filter>Input</Filter>
     </ClInclude>
     <ClInclude Include="Source\Light.h">
-      <Filter>light</Filter>
+      <Filter>Light</Filter>
     </ClInclude>
     <ClInclude Include="Source\System.h">
-      <Filter>system</Filter>
+      <Filter>System</Filter>
     </ClInclude>
     <ClInclude Include="Source\PERFORMANCE_COUNTER.h">
-      <Filter>header</Filter>
+      <Filter>Header</Filter>
     </ClInclude>
     <ClInclude Include="Source\Misc.h">
-      <Filter>header</Filter>
+      <Filter>Header</Filter>
     </ClInclude>
     <ClInclude Include="Source\OBJECT.h">
-      <Filter>header</Filter>
+      <Filter>Header</Filter>
     </ClInclude>
     <ClInclude Include="Source\Singleton.h">
-      <Filter>header</Filter>
+      <Filter>Header</Filter>
     </ClInclude>
     <ClInclude Include="Source\Shader.h">
-      <Filter>shader</Filter>
+      <Filter>Shader</Filter>
     </ClInclude>
     <ClInclude Include="Source\BlendMode.h">
-      <Filter>blendmode</Filter>
+      <Filter>BlendMode</Filter>
     </ClInclude>
     <ClInclude Include="Source\Collision.h">
-      <Filter>collision</Filter>
+      <Filter>Collision</Filter>
     </ClInclude>
     <ClInclude Include="Source\DirectX11.h">
-      <Filter>directx11</Filter>
+      <Filter>DirectX11</Filter>
     </ClInclude>
     <ClInclude Include="Source\DropManager.h">
-      <Filter>dropmanager</Filter>
+      <Filter>DropManager</Filter>
     </ClInclude>
     <ClInclude Include="Source\Rasterizer.h">
-      <Filter>rasterizer</Filter>
+      <Filter>Rasterizer</Filter>
     </ClInclude>
     <ClInclude Include="Source\Graphics\Graphics.h">
-      <Filter>graphics</Filter>
+      <Filter>Graphics</Filter>
     </ClInclude>
     <ClInclude Include="Source\LineRender.h">
-      <Filter>shader</Filter>
+      <Filter>Shader</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="imgui">
-      <UniqueIdentifier>{67191cc1-5e92-4e18-8da0-cc6528f2708a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="model">
-      <UniqueIdentifier>{81fd5541-064d-47eb-b4e4-2ef2ac63a49b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="resourcemanager">
-      <UniqueIdentifier>{0ae32ccf-9b5c-41ce-8997-d88cdabb685a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="camera">
-      <UniqueIdentifier>{3f0509b8-c004-49f5-ba95-993fa5fbce7a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="input">
-      <UniqueIdentifier>{f903af5e-9a97-4c5b-a2bc-b91cbf736928}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="fx">
-      <UniqueIdentifier>{ea9277dc-efa9-4426-a616-0526e355a998}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="light">
-      <UniqueIdentifier>{e395fa21-bb86-4657-bdf3-9c022fd90f0d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="system">
-      <UniqueIdentifier>{4227991f-f986-44b8-8e52-d682fab6d834}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="header">
-      <UniqueIdentifier>{166de890-350f-40ec-b636-83962043c523}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="shader">
-      <UniqueIdentifier>{fe77cd32-c8fe-47a5-bc7f-a14ee3c8401f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="blendmode">
+    <Filter Include="BlendMode">
       <UniqueIdentifier>{259bb87b-44d1-4161-be9f-97593d89125f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="collision">
+    <Filter Include="Camera">
+      <UniqueIdentifier>{3f0509b8-c004-49f5-ba95-993fa5fbce7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision">
       <UniqueIdentifier>{c606a7a7-9a7a-438b-8ea7-979694c6e9f1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="directx11">
+    <Filter Include="DirectX11">
       <UniqueIdentifier>{caa96a6e-5924-4ac5-b90b-63f56fa0e7a8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="dropmanager">
+    <Filter Include="DropManager">
       <UniqueIdentifier>{71964d6d-0c70-422e-9ca2-75368b147442}</UniqueIdentifier>
     </Filter>
-    <Filter Include="rasterizer">
+    <Filter Include="Fx,HLSL">
+      <UniqueIdentifier>{ea9277dc-efa9-4426-a616-0526e355a998}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{9f92809e-c5c4-4ace-b283-ad82745081fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{166de890-350f-40ec-b636-83962043c523}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Imgui">
+      <UniqueIdentifier>{67191cc1-5e92-4e18-8da0-cc6528f2708a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{f903af5e-9a97-4c5b-a2bc-b91cbf736928}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Light">
+      <UniqueIdentifier>{e395fa21-bb86-4657-bdf3-9c022fd90f0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{81fd5541-064d-47eb-b4e4-2ef2ac63a49b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rasterizer">
       <UniqueIdentifier>{27fe6f7e-0127-416a-9894-db5845d031a4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="graphics">
-      <UniqueIdentifier>{9f92809e-c5c4-4ace-b283-ad82745081fb}</UniqueIdentifier>
+    <Filter Include="ResourceManager">
+      <UniqueIdentifier>{0ae32ccf-9b5c-41ce-8997-d88cdabb685a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{fe77cd32-c8fe-47a5-bc7f-a14ee3c8401f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{4227991f-f986-44b8-8e52-d682fab6d834}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="HLSL\Line.hlsli">
-      <Filter>fx</Filter>
+      <Filter>Fx,HLSL</Filter>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

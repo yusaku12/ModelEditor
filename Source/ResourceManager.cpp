@@ -30,7 +30,7 @@ std::shared_ptr<FBXModel>ModelResourceManager::Generate(std::string model_path)
 HRESULT ModelResourceManager::Recreate(Model* m, std::string new_file_name)
 {
     std::filesystem::path path{ new_file_name };
-    path.replace_extension(".UEN");
+    path.replace_extension(".mdl");
     m->Resource()->Recreate(path.string());
     return S_OK;
 }

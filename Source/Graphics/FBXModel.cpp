@@ -21,7 +21,7 @@ FBXModel::FBXModel(ID3D11Device* dv, std::string model_path, bool Triangulate)
 
     std::filesystem::path path(model_path);
 
-    if (path.extension() == ".UEN")
+    if (path.extension() == ".mdl")
     {
         std::ifstream ifs(path, std::ios::binary);
         cereal::BinaryInputArchive in(ifs);
@@ -99,7 +99,7 @@ FBXModel::FBXModel(ID3D11Device* dv, std::string model_path, bool Triangulate)
         RetrieveMeshes(scene);
         RetrieveMaterials(scene);
         RetrieveAnimations(scene);
-        path.replace_extension(".UEN");
+        path.replace_extension(".mdl");
         if (std::filesystem::exists(path))
             std::filesystem::remove(path);
         std::ofstream ofs(path, std::ios::binary);
@@ -586,7 +586,7 @@ void FBXModel::CreateBuffers(ID3D11Device* dv, const char* model_path)
                 if (!std::filesystem::exists(format))
                     std::filesystem::create_directories(format);
                 std::filesystem::path filename{ m->second.texture_path[ind] };
-                //filename.replace_extension("png");
+                //filename.replace_extension("DDS");
 
                 path = format += filename.filename();
                 m->second.Textures[ind] = TextureManager::Instance()->Retrieve(path.wstring());

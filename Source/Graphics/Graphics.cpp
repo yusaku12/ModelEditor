@@ -95,7 +95,6 @@ bool Graphics::Render()
 
 	LightingManager::Instance()->RenderDebug();
 	GUI::Instance()->Render();
-	IMGUI::Instance()->Render();
 
 	//ƒ‰ƒCƒ“oŒ»
 	{
@@ -103,6 +102,7 @@ bool Graphics::Render()
 		DirectX11::Instance()->GetLineRenderer()->Render(dc, data.view_proj, DirectX11::Instance()->Projection());
 	}
 
+	IMGUI::Instance()->Render();
 #pragma endregion
 
     INPUTMANAGER::Instance()->Execute();

@@ -33,8 +33,8 @@ void GUI::Execute()
         if (ImGui::MenuItem("OPEN MODEL"))
         {
             ofn.lStructSize = sizeof(OPENFILENAME);
-            ofn.lpstrFilter = TEXT("FBX files {*.fbx;*.UEN}\0*.fbx;*.UEN\0")
-                              TEXT("OBJ files {*.obj*.UEN}\0*.obj;*.UEN\0");
+            ofn.lpstrFilter = TEXT("FBX files {*.fbx;*.mdl}\0*.fbx;*.mdl\0")
+                              TEXT("OBJ files {*.obj*.mdl}\0*.obj;*.mdl\0");
             ofn.lpstrCustomFilter = strCustom;
             ofn.nMaxCustFilter = 256;
             ofn.nFilterIndex = 0;
@@ -62,14 +62,14 @@ void GUI::Execute()
         if (ImGui::MenuItem("SAVE MODEL"))
         {
             ofn.lStructSize = sizeof(OPENFILENAME);
-            ofn.lpstrFilter = TEXT("UEN files {*.UEN}\0*.UEN\0");
+            ofn.lpstrFilter = TEXT("mdl files {*.mdl}\0*.mdl\0");
             ofn.lpstrFile = strFile;
             ofn.nMaxFile = MAX_PATH;
             ofn.Flags = OFN_FILEMUSTEXIST | OFN_OVERWRITEPROMPT;
             BOOL save = GetSaveFileName(&ofn);
             if (save)
             {
-                format = { ".UEN" };
+                format = { ".mdl" };
                 std::filesystem::path path(created_path);
                 std::wstring wpath = strFile;
                 std::string s_temp(wpath.begin(), wpath.end());
@@ -105,7 +105,6 @@ void GUI::Execute()
         model->SetTransformation(scale, quaternion, translation);
         model->UpdateTransform();
     }
-
 }
 
 /*-------------------------------------------------GUI TransformUI()---------------------------------------------------------*/
@@ -245,7 +244,7 @@ void GUI::MaterialUI()
     {
         browser->Open();
         browser->SetTitle("Open texture file");
-        browser->SetTypeFilters({ ".png", ".jpg", ".tga", ".*" });
+        browser->SetTypeFilters({ ".png", ".jpg", ".tga",".DDS", ".*" });
         openFileM = true;
         model->Resource()->AddMaterial(material_path, model_name, (FBXModel::MATERIAL_TYPE)s_type, model->Resource()->Materials.find(m_selected_item)->second);
     }

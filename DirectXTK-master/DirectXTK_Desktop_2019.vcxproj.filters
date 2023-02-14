@@ -311,5 +311,6 @@
       <Filter>Src\Shaders\Shared</Filter>
     </None>
     <None Include="README.md" />
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
